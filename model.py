@@ -244,9 +244,14 @@ class MultitaskBartFinetuner(pl.LightningModule):
             type_path="val",
             args=self.hparams
         )
+        sampler = MultitaskBatchSampler(
+            val_dataset,
+            batch_size=self.hparams.train_batch_size,
+            drop_last=False
+        )
         return DataLoader(
             val_dataset,
-            batch_size=self.hparams.eval_batch_size,
+            batch_sampler=sampler,
             num_workers=4
         )
 

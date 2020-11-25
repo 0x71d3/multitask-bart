@@ -31,7 +31,7 @@ class MultitaskBatchSampler(Sampler):
     def __len__(self):
         if self.drop_last:
             nums_samples = {}
-            for idx in len(self.data_source):
+            for idx in range(len(self.data_source)):
                 task = self.data_source[idx]["task"]
                 if task not in nums_samples:
                     nums_samples[task] = 0
