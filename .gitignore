@@ -1,3 +1,11 @@
 __pycache__/
 
+dd/
+tec/
+sst-2/
+
 *.sh
+
+bart_*/
+
+lightning_logs/

@@ -309,7 +309,7 @@ args_dict = dict(
     early_stop_callback=False,
     fp_16=False,  # if you want to enable 16-bit training then install apex and set this to true
     opt_level="O1",  # you can find out more on optimisation levels here https://nvidia.github.io/apex/amp.html#opt-levels-and-properties
-    max_grad_norm=0.1, # if you enable 16-bit training then set this to a sensible value, 0.5 is a good default
+    max_grad_norm=0.1,  # if you enable 16-bit training then set this to a sensible value, 0.5 is a good default
     seed=42,
     label_smoothing=0.1
 )

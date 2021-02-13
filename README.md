@@ -1,6 +1,6 @@
-# multitask-bart
+# Multi-Task Learning of BART
 
-based on https://github.com/patil-suraj/exploring-T5/blob/master/t5_fine_tuning.ipynb
+Fine-tune BART for tasks of generation and classification.
 
     DATA_DIR=.
     OUTPUT_DIR=bart_res
@@ -17,18 +17,14 @@ based on https://github.com/patil-suraj/exploring-T5/blob/master/t5_fine_tuning.
         --tasks response,emotion,sentiment \
         --task_dirs dd,tec,sst-2
 
-model
+## Model
 
-https://huggingface.co/transformers/v2.9.1/model_doc/bart.html
+- https://huggingface.co/transformers/v2.9.1/model_doc/bart.html
+- https://github.com/patil-suraj/exploring-T5/blob/master/t5_fine_tuning.ipynb
+- https://github.com/pytorch/fairseq/blob/master/examples/bart/README.summarization.md
 
-dataset
+## Datasets
 
-http://yanran.li/dailydialog
-
-http://saifmohammad.com/WebPages/SentimentEmotionLabeledData.html
-
-https://nlp.stanford.edu/sentiment/index.html
-
-hyperparameter
-
-https://github.com/pytorch/fairseq/blob/master/examples/bart/README.summarization.md
+- http://yanran.li/dailydialog
+- http://saifmohammad.com/WebPages/SentimentEmotionLabeledData.html
+- https://nlp.stanford.edu/sentiment/index.html
